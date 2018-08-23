@@ -1,8 +1,11 @@
 import firebase from 'firebase'
 import 'firebase/firestore'
 
+import dotenv from 'dotenv'
+dotenv.config();
+
 const config = {
-  apiKey: 'AIzaSyAH_7847b75ySrKr3TwhJH06dK-T8PVK0o',
+  apiKey: process.env.API_KEY,
   authDomain: 'vuelist-30d21.firebaseapp.com',
   databaseURL: 'https://vuelist-30d21.firebaseio.com',
   projectId: 'vuelist-30d21',
